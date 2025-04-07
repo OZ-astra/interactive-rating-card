@@ -1,0 +1,168 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: "Overpass", sans-serif;
+	background-color: hsl(216, 12%, 8%);
+}
+
+main {
+	width: 90%;
+	height: fit-content;
+	padding: 1.2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: hsl(213, 19%, 18%, 1);
+	border-radius: 10px;
+}
+
+/* rating state starts here */
+
+#rating-state {
+	margin-bottom: 0.7rem;
+}
+
+#rating-state .star-icon {
+	width: 7%;
+}
+
+#rating-state img {
+	padding: 0.7rem;
+	background-color: hsl(216, 12%, 8%, 0.08);
+	border-radius: 50%;
+}
+
+#rating-state h2 {
+	margin-top: 1rem;
+	font-weight: 400;
+	color: hsl(0, 100%, 100%);
+}
+
+#rating-state p {
+	font-size: 0.9rem;
+	margin-top: 1rem;
+	line-height: 1.35rem;
+	font-weight: 400;
+	color: hsl(217, 12%, 63%);
+}
+
+#rating-state form {
+	margin-top: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+	width: 100%;
+	list-style-type: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+}
+
+li {
+	background-color: hsl(216, 12%, 8%, 0.08);
+	font-weight: 400;
+	width: 15%;
+	aspect-ratio: 1 / 1;
+	padding: 0;
+	border-radius: 50%;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: hsl(217, 12%, 63%);
+}
+
+li:hover {
+	background-color: hsl(25, 97%, 53%);
+}
+
+#submit {
+	border: 2px solid hsl(25, 97%, 53%);
+	margin: auto;
+	margin-top: 1rem;
+	width: 100%;
+	padding: 0.8rem 0.6rem;
+	border-radius: 20px;
+	font-size: 0.8rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	background-color: hsl(25, 97%, 53%);
+}
+
+/* rating state ends here */
+
+/* thank you state starts here */
+
+#thank-you-state {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#thank-you-state img {
+	margin-top: 1rem;
+}
+
+#thank-you-state #number-selected {
+	font-size: 0.9rem;
+	font-weight: 400;
+	margin-top: 1rem;
+	border-radius: 15px;
+	padding: 0.35rem 0.6rem;
+	background-color: hsl(216, 12%, 8%, 0.08);
+	color: hsl(25, 97%, 53%, 0.8);
+}
+
+#thank-you-state h2 {
+	margin-top: 1.2rem;
+	font-weight: 400;
+	color: hsl(0, 100%, 100%);
+}
+
+#thank-you-state #thank-you-message {
+	font-weight: 400;
+	font-size: 0.85rem;
+	text-align: center;
+	line-height: 1.3rem;
+	margin-top: 1rem;
+	margin-bottom: 0.8rem;
+	color: hsl(217, 12%, 63%);
+}
+
+/* rating state and thank you state desktop design */
+
+@media (min-width: 400px) {
+	main {
+		border: 2px solid red;
+		width: 365px;
+	}
+}
+
+/* frontend mentor attribution */
+.attribution {
+	font-size: 11px;
+	text-align: center;
+	margin-top: 2rem;
+}
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
