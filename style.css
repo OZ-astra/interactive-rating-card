@@ -152,7 +152,6 @@ li:hover {
 
 @media (min-width: 400px) {
 	main {
-		border: 2px solid red;
 		width: 365px;
 	}
 }
